@@ -1,3 +1,5 @@
+var scrollDistance = 0;
+
 var render = function(li){
   var src = li.getElementsByClassName("gallery-img")[0].src;
   exifGet(li.getElementsByClassName("gallery-img")[0]);
@@ -15,6 +17,8 @@ var bigPicture = function(li){
     document.getElementById("theImage-placeholder").src = src;
   }
   
+  scrollDistance = $(document).scrollTop();
+  
   document.getElementById("bigPicture").style.zIndex = "10";
   document.getElementById("bigPicture").style.display = "initial";
   document.getElementById("gallery").style.display = "none";
@@ -23,6 +27,7 @@ var bigPicture = function(li){
 var gallery = function(){
   document.getElementById("bigPicture").style.display = "none";
   document.getElementById("gallery").style.display = "initial";
+  document.body.scrollTop = scrollDistance;
 }
 
 var exifGet = function(img){
