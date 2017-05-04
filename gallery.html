@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=false">
+    <script src="exif.js"></script>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="DigitalFace/stylesheet.css"/>
+    <link rel="stylesheet" href="bigPicture.css"/>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="gallery">
+      <div id="header">
+        <h1 id="site-title">ISAAC R. WASSERMAN</h1>
+        <div id="navbar">
+          <ul id="navbar-list">
+            <li class="nav-item">PHOTOGRAPHY</li>
+<!--            <li class="nav-item">VIDEOGRAPHY</li>-->
+            <li class="nav-item">TECHNOLOGY</li>
+          </ul>
+        </div>
+      </div>
+      <div id="gallery">
+        <ul id="gallery-ul">
+          <li class="gallery-item" onclick="bigPicture(this)" onmouseover="render(this)">
+            <img class="gallery-img" src="photos/DSC00964.jpg"/>
+          </li>
+          <li class="gallery-item" onclick="bigPicture(this)" onmouseover="render(this)">
+            <img class="gallery-img" src="photos/36350032.jpg"/>
+          </li>
+          <li class="gallery-item" onclick="bigPicture(this)" onmouseover="render(this)">
+            <img class="gallery-img" src="photos/DSC00678.jpg"/>
+          </li>
+          <li class="gallery-item" onclick="bigPicture(this)" onmouseover="render(this)">
+            <img class="gallery-img" src="photos/DSC00112.jpg"/>
+          </li>
+          <li class="gallery-item" onclick="bigPicture(this)" onmouseover="render(this)">
+            <img class="gallery-img" src="photos/DSC00205.jpg"/>
+          </li>
+          <li class="gallery-item" onclick="bigPicture(this)" onmouseover="render(this)">
+            <img class="gallery-img" src="photos/DSC09293.jpg"/>
+          </li>
+          <li class="gallery-item" onclick="bigPicture(this)" onmouseover="render(this)">
+            <img class="gallery-img" src="photos/DSC04448.jpg"/>
+          </li>
+          <li class="gallery-item" onclick="bigPicture(this)" onmouseover="render(this)">
+            <img class="gallery-img" src="photos/DSC07714.jpg"/>
+          </li>
+          <li class="gallery-item" onclick="bigPicture(this)" onmouseover="render(this)">
+            <img class="gallery-img" src="photos/DSC09656.jpg"/>
+          </li>
+          <div class="float-clearer"></div>
+        </ul>
+      </div>
+    </div>
+    <div id="bigPicture" onclick="gallery()">
+      <div id="background">
+        <img id="background-img"/>
+      </div>
+      <div id="body-container">
+        <div id="display">
+          <div id="img-container">
+            <div id="display-img-placeholder">
+              <img id="theImage-placeholder"/>
+            </div>
+            <div id="display-img">
+              <img id="theImage"/>
+            </div>
+            <div id="description">
+              <span id="timestamp"></span>
+            </div>
+            <div id="dots">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
