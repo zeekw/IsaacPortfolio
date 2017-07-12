@@ -3,10 +3,13 @@
   margin: 0 auto;
   background-color: #c9c9c9;
   margin-top: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   background-image: url(TIL-Hero-Image.png);
   background-position: center center;
   background-size: cover;
+  -webkit-box-shadow: 1px 0px 8px 0px rgba(112,112,112,0.3);
+  -moz-box-shadow: 1px 0px 8px 0px rgba(112,112,112,0.3);
+  box-shadow: 1px 0px 8px 0px rgba(112,112,112,0.3);
 }
 
 @media (max-width: 550px) {
@@ -41,14 +44,56 @@
   margin-top: -50px;
 }
 
-#mission-link {
-  text-align: left;
-  font-weight: 600;
+#mission-statement {
+  height: 0px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
   margin-top: 0px;
+  margin-bottom: 100px;
+  color: black;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-shadow: 1px 0px 8px 0px rgba(112,112,112,0.3);
+  -moz-box-shadow: 1px 0px 8px 0px rgba(112,112,112,0.3);
+  box-shadow: 1px 0px 8px 0px rgba(112,112,112,0.3);
+  transition: height 0.5s;
+  overflow: hidden;
+}
+
+#mission-statement h1 {
+  padding: 10px
+}
+#mission-statement p {
+  padding: 10px;
+  padding-top: 0px;
+}
+
+@media (max-width: 550px) {
+  #mission-statement {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+
+
+#i-info {
+  width: 16px;
+  cursor: pointer;
+}
+
+#i-info:hover {
+  opacity: 0.8;
+}
+
+#mission-link {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  width: 100%;
   font-family: sans-serif;
   color: white;
-  padding: 5px;
-  text-decoration: underline;
+  font-size: 12px;
+  margin-top: -20px;
 }
 
 #posts {
@@ -67,8 +112,8 @@
   background-color: white;
   margin: 50px 0;
   padding: 20px;
-  -webkit-box-shadow: 1px 0px 4px 0px rgba(112,112,112,0.3);
-  -moz-box-shadow: 1px 0px 4px 0px rgba(112,112,112,0.3);
+  -webkit-box-shadow: 1px 0px 8px 0px rgba(112,112,112,0.3);
+  -moz-box-shadow: 1px 0px 8px 0px rgba(112,112,112,0.3);
   box-shadow: 1px 0px 8px 0px rgba(112,112,112,0.3);
 }
 

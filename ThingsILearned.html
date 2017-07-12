@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="DigitalFace/stylesheet.css"/>
     <link rel="stylesheet" href="bigPicture.css"/>
     <link rel="stylesheet" href="ThingsILearned.css"/>
-    <script src="main.js"></script>
   </head>
   <body>
     <div id="gallery">
@@ -16,35 +15,27 @@
         <div id="navbar">
           <ul id="navbar-list">
             <a href="../"><li class="nav-item" >PHOTOGRAPHY</li></a>
-            <li class="nav-item special-page">*THINGS I LEARNED*</li>
           </ul>
         </div>
       </div>
       <div id="hero-image">
         <div id="hero-text">
           <p id="hero-header">Things I Learned</p>
-          <p id="hero-subtitle">Summer 2017</p>
+          <p id="hero-subtitle">Summer 2017 <img id="i-info" src="i-info.png" onclick="openInfo();"/></p>
         </div>
+      </div>
+      <div id="mission-statement">
+        <h1>What is this?</h1>
+        <p>To me, the worst feeling in life is the feeling of idleness. The feeling you get when you spend the whole day at home without accomplishing anything. I mean, there were 24 perfectly good hours that were just wasted. Now, the summer tends to promote this type of behavior, but I really don't believe in it. That's because the best feeling in life is the feeling of accomplishment and productivity; the feeling that you get after finishing a project, reading a book, or learning something new and exciting. It's not always easy to find this feeling in your day. There's so many things to get in the way, and there are so many hours of sleep to catch up on.</p>
+        <p>My goal is to never feel like I wasted the day away. My goal is to push myself to learn something new every day.</p>
+        <p>This blog will feature a new post every day that outlines what I learned and how I learned it. Some of them might even feature videos. If you have an idea for something new I should learn, drop me an email: isaacrwasserman@gmail.com.</p>
       </div>
       <div id="posts">
         <div class="post">
           <div class="post-hero-image">
             <div class="post-day-marker">Day 1</div>
             <div class="post-hero-text">
-              <div class="post-hero-header">Post Hero Text</div>
-            </div>
-          </div>
-          <div class="post-text-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec lobortis metus. Maecenas ut enim sit amet ante consectetur volutpat et vel lacus. Suspendisse pulvinar nec lectus non scelerisque. Integer eu convallis orci, a porttitor magna. Mauris blandit felis et venenatis gravida. Nunc quis tristique metus. Morbi pulvinar, justo eget accumsan dignissim, nulla purus pulvinar odio, vestibulum sagittis felis urna non lectus. Maecenas efficitur accumsan risus.</p>
-            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla velit nunc, lacinia ut enim eget, tincidunt congue urna. Duis fermentum, ipsum vitae tempor convallis, dolor enim eleifend tortor, nec tristique ipsum arcu a libero. Vivamus mollis suscipit eros at gravida. Donec eros justo, interdum eget suscipit nec, maximus eget turpis. Quisque ultricies aliquam nisi sed mollis. Sed aliquam lorem quis neque pretium porttitor varius a nibh. Nullam ultrices nulla quis erat hendrerit commodo. Phasellus tempus ultrices ante nec ullamcorper. Morbi non lorem ac augue convallis fringilla. Suspendisse rhoncus lobortis bibendum.</p>
-            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris non odio dictum enim finibus convallis quis sit amet dolor. Nam vitae lacus tincidunt, dapibus mi vitae, efficitur augue. Fusce et metus commodo, accumsan lorem.</p>
-          </div>
-        </div>
-        <div class="post">
-          <div class="post-hero-image">
-            <div class="post-day-marker">Day 2</div>
-            <div class="post-hero-text">
-              <div class="post-hero-header">Post Hero Text</div>
+              <div class="post-hero-header">Yiddish</div>
             </div>
           </div>
           <div class="post-text-content">
@@ -55,5 +46,15 @@
         </div>
       </div>
     </div>
+    <script>
+      var openInfo = function(){
+        if(document.getElementById("mission-statement").style.height != "auto"){
+          document.getElementById("mission-statement").style.height = "auto"
+        }
+        else {
+          document.getElementById("mission-statement").style.height = "0px";
+        }
+      }
+    </script>
   </body>
 </html>
