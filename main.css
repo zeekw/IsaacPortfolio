@@ -40,6 +40,10 @@ body {
   cursor: pointer;
 }
 
+.special-page {
+  color: #1daeff;
+}
+
 .float-clearer { clear: both; }
 
 #gallery {

@@ -1,0 +1,78 @@
+#hero-image {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #c9c9c9;
+  margin-top: 60px;
+  margin-bottom: 100px
+}
+
+@media (max-width: 550px) {
+  #hero-image {
+    width: 100%;
+  }
+}
+
+#hero-text {
+  width: 100%;
+  padding: 80px 0px;
+  display: inline-block;
+}
+
+#hero-header {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  width: 100%;
+  font-family: sans-serif;
+  color: white;
+  font-size: 60px;
+}
+
+#posts {
+  width: 60%;
+  margin: 30px auto;
+}
+
+.post {
+  background-color: white;
+  margin: 50px 0;
+  padding: 20px;
+  -webkit-box-shadow: 1px 0px 4px 0px rgba(112,112,112,0.3);
+  -moz-box-shadow: 1px 0px 4px 0px rgba(112,112,112,0.3);
+  box-shadow: 1px 0px 8px 0px rgba(112,112,112,0.3);
+}
+
+.post-hero-image {
+  width: 100%;
+  background-color: #c9c9c9
+}
+
+.post-hero-text {
+  width: 100%;
+  padding: 100px 0px;
+  display: inline-block;
+}
+
+.post-hero-header {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  width: 100%;
+  font-family: sans-serif;
+  color: white;
+  font-size: 60px;
+}
+
+.post-day-marker {
+  position: absolute;
+  padding: 5px;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgba(255,255,255,0.6)
+}
+
+.post-text-content {
+  text-align: left;
+  padding: 20px;
+  font-family: sans-serif;
+  line-height: 1.5
+}
